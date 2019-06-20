@@ -10,6 +10,18 @@
 </nav>
 
 <div class="social-icons">
+    {% if site.twitter_username != "" %}
+    <a href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-lg"></i></a>
+    {% endif %}
+    {% if site.facebook != "" %}
+    <a href="{{ site.facebook }}"><i class="fab fa-facebook-square fa-lg"></i></a>
+    {% endif %}
+    {% if site.github_username != "" %}
+    <a href="{{ site.github_username | prepend: "https://github.com/" }}" rel="noopener noreferrer"><i class="fab fa-github fa-lg"></i></a>
+    {% endif %}
+    {% if site.linkedin != "" %}
+    <a href="{{ site.linkedin }}" rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i></a>
+    {% endif %}
 
 </div>
 

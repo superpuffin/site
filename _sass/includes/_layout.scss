@@ -24,6 +24,7 @@ body {
     .site-title {
         // padding-left: 45px;
         width: calc(50% + 2rem);
+        padding-bottom: 100px;
     }
 
     h1 {
@@ -44,6 +45,16 @@ body {
         font-size: 1.5rem; 
         &:hover {
             color: $sidebar_hover;
+        }
+    }
+
+    .social-icons {
+        position: absolute;
+        left: 85px;
+        bottom: 5rem;
+
+        a {
+            padding: 0.4rem;
         }
     }
 }
