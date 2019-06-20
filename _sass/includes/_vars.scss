@@ -14,7 +14,8 @@ $sidebar_hover: set-hover-color($sidebarbg);
 
 // Typing
 $fontfam: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif;
-$sidebar_width: 380px;
+$sidebar_width_xl: 380px;
+$sidebar_width_l: calc(#{$sidebar_width_xl} - 100px);
 
 // Media Queries
 @mixin mediaSm {
@@ -30,13 +31,19 @@ $sidebar_width: 380px;
 }
 
 @mixin mediaLg {
-    @media screen and (min-width:769px) and (max-width:1170px) {
+    @media screen and (min-width:769px) and (max-width:1024px) {
         @content;
     }
 }
 
 @mixin mediaXl {
-    @media screen and (min-width:1171px) {
+    @media screen and (min-width:1024px) and (max-width:1440px) {
+        @content;
+    }
+}
+
+@mixin media2k {
+    @media screen and (min-width:1441px) {
         @content;
     }
 }

@@ -1,0 +1,71 @@
+@include mediaLg {
+    .sidebar_bg {
+        width: $sidebar_width_l;
+        height: 100vh;
+
+    }
+
+    .sidebar {
+        padding:25px 25px 25px 65px;
+    }
+
+    .bg .container {
+        display: flex;
+        padding-right: calc(#{$sidebar_width_xl}/2);
+        justify-content: center;
+        width: calc(100vw - #{$sidebar_width_l});
+        height: 100vh;
+
+        .content {
+            margin: 6rem 0;
+        }
+    }
+}
+
+@include mediaXl {
+    .sidebar-bg {
+        height: 100vh;
+    }
+
+    .sidebar {
+        padding:45px 45px 45px 85px;
+    }
+
+    .bg {
+        margin-left: $sidebar_width_xl;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+
+            .content {
+                max-width: 55vw;
+            }
+        }
+    }
+}
+
+@include media2k {
+    .sidebar-bg {
+        height: 100vh;
+    }
+
+    .sidebar {
+        padding:55px 55px 55px 100px;
+    }
+
+    .bg {
+        margin-left: $sidebar_width_xl;
+    
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        
+            .content {
+                max-width: 45vw;
+            }
+        }
+    }
+}

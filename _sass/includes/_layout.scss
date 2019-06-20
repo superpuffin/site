@@ -15,23 +15,20 @@ body {
     font-family: $fontfam;
     line-height: 1.5;
     margin: 0;
+    text-align: left;
 }
 
 .sidebar_bg {
-    width: $sidebar_width;
-    // height: 100vh; => in media queries!
     float: left;
     background-color: $sidebarbg;
     background-image: $sidebarbgi;
 }
 
 .sidebar {
-    padding:45px 45px 45px 85px;
     margin:0;
     color: $sidebar_text;
 
     .site-title {
-        // padding-left: 45px;
         width: calc(50% + 2rem);
         padding-bottom: 100px;
 
@@ -76,14 +73,7 @@ body {
     }
 }
 
-// .bg {
-//     margin-left: $sidebar_width;
-//     height: 100vh;
-//     background-position: center;
-// }
-
 .bg {
-    margin-left: $sidebar_width;
     height: 100vh;
     background: $bgcolor;
     background-position: center;
@@ -96,8 +86,7 @@ body {
     }
 
     .content {
-        // TO DO: media queries
-        margin: 6rem 20rem 0 15rem;
+        margin: 6rem 2rem;
         color: $textcolor;
 
         h1 {

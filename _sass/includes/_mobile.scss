@@ -1,10 +1,5 @@
 // Large smartphones and tablets
 @include mediaMd {
-    body {
-        line-height: 1.5;
-        text-align: left;
-    }
-
     .sidebar_bg {
         width: 100vw;
         height: auto;
@@ -19,7 +14,7 @@
 
         .site-title {
             width: auto;
-            margin-right: 0;
+            padding: 0;
         
             a h1 {
                 font-size: 1.5rem;
