@@ -1,23 +1,33 @@
 // Set text color, depending on bg color
 @function set-text-color($color) {
     @if (lightness($color) > 50) {
-      @return #121212; // Lighter backgorund, return dark color
+      @return rgba( 45, 55, 65, .85 ); // Lighter backgorund, return dark color
     } @else {
-      @return #ffffff; // Darker background, return light color
+      @return #ddd5d5; // Darker background, return light color
     }
   }
+
+@function set-hover-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000; // Lighter backgorund, return dark color
+      } @else {
+        @return #fff; // Darker background, return light color
+      }
+}
 
 //   Set Colors
 $bgcolor: #fff;
 $textcolor: set-text-color($bgcolor);
+$color_hover:set-hover-color($bgcolor);
 // $sidebarbg: #000;
 // $sidebarbgi: linear-gradient(to bottom, #323232, #0e0e0e);
 $sidebarbg: #fff;
 $sidebarbgi: none;
 $sidebar_text: set-text-color($sidebarbg);
+$sidebar_hover: set-hover-color($sidebarbg);
 
 // Typing
 $fontfam: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif;
-$sidebar_width: 350px;
+$sidebar_width: 380px;
 
 
