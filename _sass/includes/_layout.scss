@@ -1,0 +1,56 @@
+// Basic layout and styling
+
+body {
+    background-color: $bgcolor;
+    max-width: 100%;
+    font-family: $fontfam;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.sidebar_bg {
+    width: $sidebar_width;
+    height: 100vh;
+    float: left;
+    background-color: $sidebarbg;
+    background-image: $sidebarbgi;
+}
+
+.sidebar {
+    margin:25px;
+
+    ul {
+        list-style-type: none; }
+
+    a {
+        color: $sidebar_text;
+        font-size: 2rem; }
+}
+
+// .bg {
+//     margin-left: $sidebar_width;
+//     height: 100vh;
+//     background-position: center;
+// }
+
+.container {
+    overflow-y: auto;
+    height: 100%;
+    margin: 0 auto;
+
+    &::before {
+        content:'';
+        position: absolute;
+        display: block;
+        margin-left: $sidebar_width;
+        height: 100vh;
+        background-position: center;
+        background-color: aqua;
+        background-image: linear-gradient(Tomato, hotpink)
+    }
+}
+
+.content {
+    margin-top: 150px;
+    margin-left: 30px;
+}
