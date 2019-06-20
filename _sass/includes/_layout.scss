@@ -5,6 +5,10 @@
 }
 
 // Basic layout and styling
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: $bgcolor;
     max-width: 100%;
@@ -15,7 +19,7 @@ body {
 
 .sidebar_bg {
     width: $sidebar_width;
-    height: 100vh;
+    // height: 100vh; => in media queries!
     float: left;
     background-color: $sidebarbg;
     background-image: $sidebarbgi;

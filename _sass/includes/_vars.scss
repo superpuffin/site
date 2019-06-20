@@ -1,5 +1,5 @@
 // Functions
-@import "functions";
+@import "functions_mixins";
 
 //   Set Colors
 $bgcolor: #fff;
@@ -15,3 +15,28 @@ $sidebar_hover: set-hover-color($sidebarbg);
 // Typing
 $fontfam: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif;
 $sidebar_width: 380px;
+
+// Media Queries
+@mixin mediaSm {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width:769px) and (max-width:1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width:1171px) {
+        @content;
+    }
+}
