@@ -1,5 +1,10 @@
-// Basic layout and styling
+// Mixins
+@mixin HoverFade {
+    color: $sidebar_hover;
+    transition: all 0.5s ease-out;
+}
 
+// Basic layout and styling
 body {
     background-color: $bgcolor;
     max-width: 100%;
@@ -32,7 +37,7 @@ body {
                 font-weight: 400;
                 font-size: 2rem;
                 &:hover {
-                    color: $sidebar_hover;
+                    @include HoverFade();
                     text-decoration: underline;
                 }
             }
@@ -48,7 +53,7 @@ body {
         color: $sidebar_text;
         font-size: 1.5rem; 
         &:hover {
-            color: $sidebar_hover;
+            @include HoverFade();
         }
 
         &.active {
@@ -87,7 +92,8 @@ body {
     }
 
     .content {
-        margin: 6rem 10rem 0 10rem;
+        // TO DO: media queries
+        margin: 6rem 20rem 0 15rem;
         color: $textcolor;
 
         h1 {

@@ -1,19 +1,5 @@
-// Set text color, depending on bg color
-@function set-text-color($color) {
-    @if (lightness($color) > 50) {
-      @return rgba( 45, 55, 65, .85 ); // Lighter backgorund, return dark color
-    } @else {
-      @return #ddd5d5; // Darker background, return light color
-    }
-  }
-
-@function set-hover-color($color) {
-    @if (lightness($color) > 50) {
-        @return #000; // Lighter backgorund, return dark color
-      } @else {
-        @return #fff; // Darker background, return light color
-      }
-}
+// Functions
+@import "functions";
 
 //   Set Colors
 $bgcolor: #fff;
