@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+menu_priority: 1
 ---
 # Welcome
 

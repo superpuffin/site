@@ -46,6 +46,10 @@ body {
         &:hover {
             color: $sidebar_hover;
         }
+
+        &.active {
+            color: $sidebar_hover;
+        }
     }
 
     .social-icons {
