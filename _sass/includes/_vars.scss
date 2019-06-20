@@ -1,11 +1,20 @@
-// Colors
+// Set text color, depending on bg color
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+      @return #121212; // Lighter backgorund, return dark color
+    } @else {
+      @return #ffffff; // Darker background, return light color
+    }
+  }
+
+//   Set Colors
 $bgcolor: #fff;
-$textcolor: #121212;
+$textcolor: set-text-color($bgcolor);
 // $sidebarbg: #000;
 // $sidebarbgi: linear-gradient(to bottom, #323232, #0e0e0e);
 $sidebarbg: #fff;
 $sidebarbgi: none;
-$sidebar_text: #121212;
+$sidebar_text: set-text-color($sidebarbg);
 
 // Typing
 $fontfam: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif;
