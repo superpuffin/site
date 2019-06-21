@@ -6,29 +6,6 @@
     <meta name="description" content="{{ page.description }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- Auto refresh, REMOVE IN PRODUCTION -->
-    <!--  -->
-    <!-- TO BE REMOVED -->
-    <script>
-      let refresh = false;
-    document.addEventListener("DOMContentLoaded", function() {
-      setInterval(function() {
-        cache_clear()
-        }, 30000);
-      });
-      
-    function cache_clear() {
-      if(refresh) {
-      window.location.reload();
-      // window.location.reload(); use this if you do not remove cache
-      }
-    }
-    </script>
-    <!--  -->
-    <!--  -->
-    <!-- TO BE REMOVED -->
-
     <!-- Styles -->
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <!-- Font Awesome -->
