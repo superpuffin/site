@@ -24,7 +24,14 @@
 
         nav {
             display: none;
-            // TO DO: add animation
+            
+            &.show {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 25px;
+                
+            }
         }
 
         .social-icons {

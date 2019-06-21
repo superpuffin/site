@@ -14,7 +14,7 @@
             <ul>
                 {% assign pages = site.pages | sort:"menu_priority" %}
                 {% for p in pages %}
-                    <li>
+                    <li class="nav-item">
                     <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
                     </li>
                 {% endfor %}
@@ -36,6 +36,6 @@
             {% endif %}
 
         </div>
-        
+
     </div>
 </div>
