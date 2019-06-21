@@ -18,14 +18,15 @@
 // Mixins
 @mixin stickySidebar {
   $transition_duration: .5s !default;
+  $transition_timing: cubic-bezier(0.22, 0.61, 0.36, 1) !default;
   transition: all $transition_duration ease;
   transition-property: all;
   transition-duration: $transition_duration;
   transition-timing-function: ease;
   z-index: 100;
-  -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-  -moz-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-  transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  -webkit-transition-timing-function: $transition_timing;
+  -moz-transition-timing-function: $transition_timing;
+  transition-timing-function: $transition_timing;
   -webkit-transition-duration: $transition_duration;
   -moz-transition-duration: $transition_duration;
   position: sticky;
