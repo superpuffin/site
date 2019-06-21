@@ -17,22 +17,21 @@
 
 // Mixins
 @mixin stickySidebar {
-  transition: all .5s ease;
+  $transition_duration: .5s !default;
+  transition: all $transition_duration ease;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: $transition_duration;
   transition-timing-function: ease;
   z-index: 100;
-  -webkit-transition-property: background-color, box-shadow, line-height, height;
-  transition-property: background-color, box-shadow, line-height, height;
-  -webkit-transition-timing-function: cubic-bezier(0.78, 0.13, 0.15, 0.86);
-  transition-timing-function: cubic-bezier(0.78, 0.13, 0.15, 0.86);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  -moz-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  -webkit-transition-duration: $transition_duration;
+  -moz-transition-duration: $transition_duration;
   position: sticky;
   top: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 5px -2px rgba(0,0,0,0.22), 0 2px 1px -1px rgba(0,0,0,0.05);
-  line-height: 30px;
   overflow-x: hidden;
   white-space: nowrap;
 }

@@ -15,3 +15,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
 });
+
+// Set navbar position
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+let prevScrollpos = window.pageYOffset;
+console.log('js loaded');
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".sidebar_bg").style.top = "0";
+    console.log("0");
+  } else {
+    document.querySelector(".sidebar_bg").style.top = "-100px";
+    console.log("-50");
+  }
+  prevScrollpos = currentScrollPos;
+}

@@ -84,7 +84,6 @@
             height: auto;
             padding: 0;
             position: relative;
-            margin: 0 2rem;
 
             .content {
                 margin: 0 2.3rem;
@@ -146,5 +145,9 @@
         .hamburger_menu {
             right: 25px;
         }
+    }
+
+    .bg .container {
+        margin: auto;
     }
 }
