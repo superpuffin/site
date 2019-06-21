@@ -79,12 +79,15 @@
 
         .container {
             width: 100vw;
+            display: flex;
+            justify-content: center;
             height: auto;
             padding: 0;
             position: relative;
+            margin: 0 2rem;
 
             .content {
-                margin: 0 2.3rem 0 2.3rem;
+                margin: 0 2.3rem;
                 overflow-y: auto;
 
                 p {

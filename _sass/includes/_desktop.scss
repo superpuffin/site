@@ -11,13 +11,12 @@
 
     .bg .container {
         display: flex;
-        padding-right: calc(#{$sidebar_width_xl}/2);
         justify-content: center;
         width: calc(100vw - #{$sidebar_width_l});
         height: 100vh;
 
         .content {
-            margin: 6rem 0;
+            margin: 6rem 2rem 0 2.3rem;;
         }
     }
 }
@@ -29,18 +28,22 @@
 
     .sidebar {
         padding:45px 45px 45px 85px;
+        z-index: 2;
     }
 
     .bg {
-        margin-left: $sidebar_width_xl;
+        // margin-left: $sidebar_width_xl;
 
         .container {
             display: flex;
             justify-content: center;
             height: 100vh;
+            width: auto;
+            z-index: 2;
+            padding-right: calc(#{$sidebar_width_xl}/6); /* Adjust position for sidebar */
 
             .content {
-                max-width: 55vw;
+                max-width: 50vw;
             }
         }
     }
