@@ -10,6 +10,7 @@ $sidebarbg: #fff !default;
 $sidebarbgi: none;
 $sidebar_text: set-text-color($sidebarbg);
 $sidebar_hover: set-hover-color($sidebarbg);
+
 // Set mobile navbar transition duration and timing if desired
 $transition_duration: .5s !default;
 $transition_timing: cubic-bezier(0.22, 0.61, 0.36, 1) !default;
@@ -20,4 +21,4 @@ $sidebar_width_xl: 380px;
 $sidebar_width_l: calc(#{$sidebar_width_xl} - 150px);
 
 // Mixins
-@import "mixinsscss";
+@import "mixins.scss";

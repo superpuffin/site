@@ -1,7 +1,14 @@
 // Mixins
 @mixin NavFade {
     transition: all $transition_duration ease;
+    transition-property: all;
+    transition-duration: $transition_duration;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: $transition_timing;
+    -moz-transition-timing-function: $transition_timing;
     transition-timing-function: $transition_timing;
+    -webkit-transition-duration: $transition_duration;
+    -moz-transition-duration: $transition_duration;
   }
   
   @mixin stickySidebar {
