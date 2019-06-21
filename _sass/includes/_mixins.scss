@@ -1,15 +1,13 @@
 // Mixins
-@mixin NavFade {
-    transition: all $transition_duration ease;
-    transition-property: all;
-    transition-duration: $transition_duration;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: $transition_timing;
-    -moz-transition-timing-function: $transition_timing;
-    transition-timing-function: $transition_timing;
-    -webkit-transition-duration: $transition_duration;
-    -moz-transition-duration: $transition_duration;
-  }
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide {
+    from {height:60px}
+    to {height:100vh}
+}
   
   @mixin stickySidebar {
     transition: all $transition_duration ease;
