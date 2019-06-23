@@ -5,7 +5,7 @@
 }
 
 @keyframes slide {
-    from {height:60px}
+    from {height:$sidebar_height}
     to {height:100vh}
 }
   

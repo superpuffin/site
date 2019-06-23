@@ -1,8 +1,9 @@
 // Large smartphones and tablets
 @include mediaMd {
+    $sidebar_height: 68px;
     .sidebar_bg {
         width: 100vw;
-        height: 60px;
+        height: $sidebar_height;
         float: none;
         display: flex;
         flex-direction: column;
@@ -16,7 +17,6 @@
 
         &.closed {
             animation: slide .5s cubic-bezier(0.215, 0.610, 0.355, 1) 0s 1 reverse;
-            height: 60px;
         }
     }
 
@@ -140,9 +140,15 @@
 
 // Small phones
 @include mediaSm {
+    $sidebar_height: 60px;
+
     body {
         line-height: 1.3;
         text-align: left;
+    }
+
+    .sidebar_bg {
+        height: $sidebar_height;
     }
 
     .sidebar {

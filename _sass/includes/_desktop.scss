@@ -6,7 +6,12 @@
     }
 
     .sidebar {
-        padding:25px 25px 25px 65px;
+        padding:25px 25px 25px 50px;
+
+        .social-icons {
+            left: 2.4rem;
+            bottom: 2.2rem;
+        }
     }
 
     .bg .container {

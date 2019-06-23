@@ -113,5 +113,30 @@ body {
             font-weight: 200;
             font-size: 1.5rem;
         }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .img-md {
+            max-width: 55%;
+        }
+
+        .img-sm {
+            max-width: 30%;
+        }
+
+        a {
+            color: $textcolor;
+            &:hover {
+                @include HoverFade();
+                color: $color_hover;
+            }
+        }
     }
 }
