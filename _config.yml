@@ -28,7 +28,6 @@ linkedin: "https://www.linkedin.com/in/yorgos-b-294a7b144" # should be an url
 
 # Build settings
 markdown: kramdown
-theme: yorgosbos
 # plugins:
 #   - jekyll-feed
 
