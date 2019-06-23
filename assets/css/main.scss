@@ -3,5 +3,8 @@
 # 
 ---
 
-// Load sass
-@import "yb.scss";
+// @import "reset.scss";
+@import "vars.scss";
+@import "layout.scss";
+@import "mobile.scss";
+@import "desktop.scss";
