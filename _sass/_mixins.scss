@@ -1,0 +1,9 @@
+@mixin hamburgerFade {
+    transition: all 0.5s ease-in-out;
+    color: $hover;
+  }
+
+@mixin HoverFade {
+    color: $hover;
+    transition: all 0.5s ease-out;
+}
