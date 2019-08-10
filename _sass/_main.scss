@@ -57,6 +57,25 @@ header {
     .nav-item:hover {
         text-decoration: underline;
     }
+
+    @media (min-width: 576px) and (max-width:767px) {
+        flex-direction: column;
+
+        .hamburger_menu {
+            position: absolute;
+            top: 35px;
+            right: 25px;
+        }
+
+        #navb {
+            flex-direction: column!important;
+            max-width: 25%;
+        
+            nav {
+                flex-direction: column!important;
+            }
+        }
+    }
 }
 
 .bg-darker {

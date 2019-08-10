@@ -4,7 +4,6 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     const menu = document.querySelector('.hamburger_menu');
     const nav = document.querySelector('#navb');
-    const social = document.querySelector('.social-icons');
 
     menu.addEventListener('click', ()=>{
         "use strict"
