@@ -1,50 +1,48 @@
-    <header class="navbar text-dark">
+    <header class="navbar navbar-dark bg-dark">
         
-        <span class="navbar-brand text-reset">
-            <a clas="text-reset" href="/"><h1 class="">{{ site.title }}</h1></a>
+        <span class="navbar-brand text-light">
+            <a clas="text-reset text-light" href="/"><h1 class="text-light display-4">{{ site.title }}</h1></a>
         </span>
 
         <nav>
-            <ul class="nav text-reset">
+            <ul class="nav text-light">
                 {% assign pages = site.pages | sort:"menu_priority" %}
                 {% for p in pages %}
                     <li class="nav-item">
-                    <a class="nav-link text-reset" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+                    <a class="nav-link text-light" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
         </nav>
 
-        <ul class="navbar-nav flex-row d-none ml-md-auto d-md-flex text-black">
+        <ul class="navbar-nav flex-row d-none ml-md-auto d-md-flex text-lightblack">
             {% if site.twitter_username != "" %}
             <li class="nav-item flex-fill">
-                <a class="nav-link text-reset p-2" href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-2x"></i></a>
+                <a class="nav-link text-light p-2" href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-2x"></i></a>
             </li>
             {% endif %}
             {% if site.facebook != "" %}
             <li class="nav-item flex-fill">
-                <a class="nav-link text-reset p-2" href="{{ site.facebook }}"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a class="nav-link text-light p-2" href="{{ site.facebook }}"><i class="fab fa-facebook-square fa-2x"></i></a>
             </li>
             {% endif %}
             {% if site.github_username != "" %}
             <li class="nav-item flex-fill">
-                <a class="nav-link text-reset p-2" href="{{ site.github_username | prepend: "https://github.com/" }}" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                <a class="nav-link text-light p-2" href="{{ site.github_username | prepend: "https://github.com/" }}" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
             </li>
             {% endif %}
             {% if site.linkedin != "" %}
             <li class="nav-item flex-fill">
-                <a class="nav-link text-reset p-2" href="{{ site.linkedin }}" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="nav-link text-light p-2" href="{{ site.linkedin }}" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
             </li>
             {% endif %}
 
         </ul>
 
-        <div></div>
-
         <div class="hamburger_menu navbar-toggler justify-content-end">
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
+            <div class="hamburger_line bg-light"></div>
+            <div class="hamburger_line bg-light"></div>
+            <div class="hamburger_line bg-light"></div>
         </div>
 
     </header>

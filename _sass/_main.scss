@@ -3,11 +3,12 @@
     // top: 20px;
     // right: 30px;
     cursor: pointer;
-    z-index: 3000;           
+    z-index: 3000;
+    border: none!important;           
 
 
     .hamburger_line {
-        background: $secondary;
+        // background: $secondary;
         height: 4px;
         width: 28px;
         margin: 0 0 5px 0;
@@ -42,4 +43,15 @@
 main img {
     max-width: 100%;
     height: auto;
+}
+
+header {
+
+    a:hover, .text-light {
+        color: #f8f9fa!important;
+    }
+
+    .nav-item:hover {
+        text-decoration: underline;
+    }
 }
