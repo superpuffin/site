@@ -1,0 +1,45 @@
+.hamburger_menu {
+    // position: absolute;
+    // top: 20px;
+    // right: 30px;
+    cursor: pointer;
+    z-index: 3000;           
+
+
+    .hamburger_line {
+        background: $secondary;
+        height: 4px;
+        width: 28px;
+        margin: 0 0 5px 0;
+        border-radius: 15px;
+        &:hover {
+            @include HoverFade();
+        }
+    }
+
+    &.close {
+        transform: rotate(180deg);
+        .hamburger_line {
+            // Line 1
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+                @include hamburgerFade();
+            }
+            // Line 2
+            &:nth-child(2) {
+                opacity: 0;
+                @include hamburgerFade();
+            }
+            // Line 3
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px, -7.5px);
+                @include hamburgerFade();
+            }
+        }
+    }
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
