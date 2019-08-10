@@ -58,7 +58,7 @@ header {
         text-decoration: underline;
     }
 
-    @media (min-width: 576px) and (max-width:767px) {
+    @media (min-width: 576px) and (max-width:900px) {
         flex-direction: column;
 
         .hamburger_menu {
