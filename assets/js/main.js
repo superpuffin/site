@@ -3,28 +3,20 @@
     var  menu_visible = false;
 document.addEventListener("DOMContentLoaded", ()=>{
     const menu = document.querySelector('.hamburger_menu');
-    // const menu_div = document.querySelector('.sidebar_bg');
-    // const menuNav = document.querySelector('nav');
-    // const navItems = document.querySelectorAll(".nav-item");
+    const nav = document.querySelector('#navb');
     const social = document.querySelector('.social-icons');
 
     menu.addEventListener('click', ()=>{
         "use strict"
         if(!menu_visible) {
             menu.classList.add('close');
-            // menu_div.classList.remove('closed');
-            // menuNav.classList.add('show');
-            // menu_div.classList.add('show');
-            // social.classList.add('show');
-            // navItems.forEach(item => item.classList.add('show'));
+            nav.classList.add('show');
+            nav.classList.add('d-flex');
             menu_visible = true;
         } else {
             menu.classList.remove('close');
-            // menu_div.classList.add('closed');
-            // menuNav.classList.remove('show');
-            // menu_div.classList.remove('show');
-            // social.classList.remove('show');
-            // navItems.forEach(item => item.classList.remove('show'));
+            nav.classList.remove('show');
+            nav.classList.remove('d-flex');
             menu_visible = false;
         }
     });

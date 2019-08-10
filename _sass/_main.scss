@@ -4,7 +4,10 @@
     // right: 30px;
     cursor: pointer;
     z-index: 3000;
-    border: none!important;           
+    border: none!important;
+        &:hover, &:active {
+            @include HoverFade();
+        }       
 
 
     .hamburger_line {
@@ -13,9 +16,9 @@
         width: 28px;
         margin: 0 0 5px 0;
         border-radius: 15px;
-        &:hover {
-            @include HoverFade();
-        }
+            &:hover {
+                @include HoverFade();
+            } 
     }
 
     &.close {
@@ -54,4 +57,8 @@ header {
     .nav-item:hover {
         text-decoration: underline;
     }
+}
+
+.bg-darker {
+    background-color: darken(#343a40, 7)!important;
 }

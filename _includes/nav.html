@@ -1,21 +1,30 @@
-    <header class="navbar navbar-dark bg-dark">
+    <header class="navbar navbar-dark navbar-expand-lg bg-darker">
         
         <span class="navbar-brand text-light">
             <a clas="text-reset text-light" href="/"><h1 class="text-light display-4">{{ site.title }}</h1></a>
         </span>
 
+        <button class="hamburger_menu navbar-toggler" data-target="navb" data-toggle="collapse">
+                <div class="hamburger_line bg-light"></div>
+                <div class="hamburger_line bg-light"></div>
+                <div class="hamburger_line bg-light"></div>
+            </button>
+
+        <div class="navbar-collapse collapse" id="navb">
         <nav>
-            <ul class="nav text-light">
+            <ul class="nav text-light flex-shrink-1">
                 {% assign pages = site.pages | sort:"menu_priority" %}
                 {% for p in pages %}
+                {% if p.title %}
                     <li class="nav-item">
                     <a class="nav-link text-light" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
                     </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </nav>
 
-        <ul class="navbar-nav flex-row d-none ml-md-auto d-md-flex text-lightblack">
+        <ul class="navbar-nav d-none flex-row ml-md-auto d-md-flex text-light justify-content-end">
             {% if site.twitter_username != "" %}
             <li class="nav-item flex-fill">
                 <a class="nav-link text-light p-2" href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-2x"></i></a>
@@ -38,11 +47,6 @@
             {% endif %}
 
         </ul>
-
-        <div class="hamburger_menu navbar-toggler justify-content-end">
-            <div class="hamburger_line bg-light"></div>
-            <div class="hamburger_line bg-light"></div>
-            <div class="hamburger_line bg-light"></div>
-        </div>
+    </div>
 
     </header>

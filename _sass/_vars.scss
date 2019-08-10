@@ -10,10 +10,10 @@
     @if (lightness($color) > 50) {
         @return rgba( 45, 55, 65, .85 ); // Lighter backgorund, return dark color
       } @else {
-        @return #ddd5d5; // Darker background, return light color
+        @return #cbd3da; // Darker background, return light color
       }
 }
 
 $primary: #fff; // Background
 $secondary: set-color($primary); // Text
-$hover: set-hover-color($secondary);
+$hover: set-hover-color($primary);
