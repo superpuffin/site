@@ -73,10 +73,9 @@ header {
 
         #navb {
             flex-direction: column!important;
-            max-width: 60%;
             justify-content: center;
         
-            nav {
+            nav ul {
                 flex-direction: column!important;
             }
         }
