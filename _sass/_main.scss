@@ -58,18 +58,23 @@ header {
         text-decoration: underline;
     }
 
-    @media (min-width: 576px) and (max-width:900px) {
+    @media (max-width:767px) {
         flex-direction: column;
+
+        span.navbar-brand a h1 {
+            font-size: 3rem;
+        }
 
         .hamburger_menu {
             position: absolute;
-            top: 35px;
-            right: 25px;
+            top: 30px;
+            right: 10px;
         }
 
         #navb {
             flex-direction: column!important;
-            max-width: 25%;
+            max-width: 60%;
+            justify-content: center;
         
             nav {
                 flex-direction: column!important;
