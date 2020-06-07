@@ -4,11 +4,11 @@ layout: default
 menu_priority: 2
 ---
 
-<span class="text-center">
+<div class="text-center mb-5">
 
 # Curiculum Vitae
 
-</span>
+</div>
 
 <div class="row">
 <!-- sidebar  -->
@@ -16,7 +16,7 @@ menu_priority: 2
 
 ### Personals
 
-<div class="mk-responsive" style="max-width:80%">
+<div class="mk-responsive" style="@media (min-width: 992px) {max-width:80%}">
 
 |||
 |:----      |       ---:            |
