@@ -24,10 +24,17 @@ github_username: superpuffin
 facebook: "" # should be an url
 linkedin: "https://www.linkedin.com/in/yorgos-b-294a7b144" # should be an url
 
+social:
+  name: Yorgos Bos
+  links:
+    - https://www.linkedin.com/in/yorgos-b-294a7b144
+    - https://github.com/superpuffin
+
 # Build settings
 markdown: GFM
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 sass:
   sass_dir: _sass

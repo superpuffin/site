@@ -3,12 +3,18 @@ title: Currilum Vitae
 layout: default
 menu_priority: 2
 ---
- 
+
+<span class="text-center">
+
+# Curiculum Vitae
+
+</span>
+
 <div class="row">
 <!-- sidebar  -->
 <div class="col-lg-3">
 
-## Personals
+### Personals
 
 <div class="mk-responsive" style="max-width:80%">
 
@@ -23,17 +29,17 @@ menu_priority: 2
 </div>
 </div>
 
-## Languages
+### Languages
 Dutch (native tongue)  
 English
 
-## Computer skills
+### Computer skills
 Microsoft Office,
 Adobe Photoshop,
 Illustrator, InDesign,
 Première
 
-## Programming
+### Programming
 Javascript, Python, R,
 PHP, Sass, CSS3 &
 HTML5, LaTeX
@@ -43,7 +49,7 @@ HTML5, LaTeX
 <!-- Main info -->
 <div class="col">
 
- # Education
+ ## Education
  -----------
 
 <div class="mk-responsive pb-4 mb-4" style="">
@@ -57,10 +63,10 @@ HTML5, LaTeX
 
 </div>
 
-# Work experience
+## Work experience
 -----------------
 
-## Part Time
+### Part Time
 
 <div class="mk-responsive pb-4" style="">
 
@@ -75,7 +81,7 @@ HTML5, LaTeX
 
 </div>
 
-# Extracurriculars
+## Extracurriculars
 ----------
 
 <div class="mk-responsive pb-4" style="">

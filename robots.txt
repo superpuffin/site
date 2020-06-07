@@ -1,0 +1,4 @@
+User-agent: * 
+Allow: /
+
+sitemap: https://bos.zone/sitemap.xml
