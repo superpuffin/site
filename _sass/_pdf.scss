@@ -1,9 +1,0 @@
-main div embed.pdf {
-    height: 78vh;
-    width: 100%;
-
-    @media (max-width:568px) {
-        max-width: 60%;
-        height: 60vh;
-    }
-}
