@@ -1,12 +1,12 @@
 ---
-title: Currilum Vitae
+title: Curriculum Vitae
 layout: default
 menu_priority: 2
 ---
 
 <div class="text-center mb-5">
 
-# Curiculum Vitae
+# Curriculum Vitae
 
 </div>
 
@@ -19,7 +19,7 @@ menu_priority: 2
 <div class="mk-responsive" style="@media (min-width: 992px) {max-width:80%}">
 
 |||
-|:----      |       ---:            |
+|:----------|----------------------:|
 |Name       |Yorgos Bos             |
 |Email      |[send me an e-mail][1] |
 
@@ -55,7 +55,7 @@ HTML5, LaTeX
 <div class="mk-responsive pb-4 mb-4" style="">
 
 ||||
-|:---------     |:----------------                  |----------------------:|
+|:--------------|:----------------------------------|----------------------:|
 |2016 - now     |Bachelor Biology                   |Utrecht University     |
 |               |_Track Toxicology, Cell Biology_   |                       |
 |2009 - 2016    |pre-university education           |Lyceum Ypenburg        |
@@ -71,11 +71,11 @@ HTML5, LaTeX
 <div class="mk-responsive pb-4" style="">
 
 ||||
-|:---------     |:----------------                      |----------------------:|
+|:--------------|:--------------------------------------|----------------------:|
 |2017 - now     |**T&E Student Employment Agency**      |Utrecht                |
 |               |_Bar manager, FC Utrecht_              |                       |
 |               |_Supervisor City side, FC Utrecht_     |                       |
-|               |_Eventmanager T&E, Incheck festivals_  |                       |
+|               |_Event manager T&E, Incheck festivals_  |                       |
 |2014 - 2016    |**de Pannenkoekensaloon**              |The Hague              |
 |               |_Washing dishes, cooking, bar work_    |                       |
 
@@ -87,14 +87,14 @@ HTML5, LaTeX
 <div class="mk-responsive pb-4" style="">
 
 ||||
-|:---------     |:----------------                   |---------------------------:|
+|:--------------|:-----------------------------------|---------------------------:|
 |2019 - 2020    |**Cultural committee**              |Unitas S.R. Utrecht         |
 |               |_Chairman_                          |                            |
 |2017 - 2020    |**Education committee**             |Utrecht Biology Association | 
 |               |_Several functions_                 |                            |
-|2018 - 2019    |**Cooking comittee**                |Unitas S.R. Utrecht         |
+|2018 - 2019    |**Cooking committee**                |Unitas S.R. Utrecht         |
 |               |_Chairman_                          |                            |
-|2017 - 2020    |**Symposium committe**              |Utrecht Biology Association |
+|2017 - 2020    |**Symposium committee**              |Utrecht Biology Association |
 |               |_Promotion_                         |                            |
 
 </div>
