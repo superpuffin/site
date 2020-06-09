@@ -1,0 +1,48 @@
+---
+title: "Blog"
+layout: "page"
+menu_priority: 3
+---
+<h1 class="pb-3">Blog</h1>
+
+{%- for post in site.posts -%}
+    <article class="media">
+        {%- if post.img_url -%}
+            <img src="{{post.img_url}}" alt="{{post.img_alt}}" class="mr-3 mt-1" style="width:5rem">
+        {%- endif -%}
+        <div class="media-body">
+            <a href="{{ post.url }}" class="mt-0"><h2 class="h4">{{post.title}}</h2></a>
+            <div class="row">
+                <span class="text-muted col no-gutters">{{- post.date | date: "%-d %B %Y" -}}</span>
+                <div class="col text-right no-gutters">
+                    {%- for tag in post.tags -%}
+                    <span class="badge badge-secondary" style="vertical-align: text-top;">{{ tag }}</span>&nbsp;
+                    {%- endfor -%}
+                </div>
+                </div>
+            <p class="text-justify">
+                {{post.description | default: post.content 
+                    | slice: 0,300 | append: '...' }}
+                <br>    
+            </p>
+            <div class="row">
+                <div class="col no-gutters">
+                    <a class="btn btn-outline-dark" href="{{post.url}}">Read more...</a>
+                </div>
+                <div class="col no-gutters text-right">
+                    <p class="text-muted font-italic pb-1">
+                        {%- if post.categories.size > 1 -%}
+                            Categories:
+                        {%- else -%}
+                            Category:
+                        {%- endif -%}
+                        {%- for cat in post.categories -%}
+                            {{ " " | append: cat }}
+                        {%- endfor -%}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <hr>
+{%- endfor -%}

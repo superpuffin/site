@@ -8,47 +8,45 @@
                 <div class="hamburger_line bg-light"></div>
                 <div class="hamburger_line bg-light"></div>
                 <div class="hamburger_line bg-light"></div>
-            </button>
+        </button>
 
         <div class="navbar-collapse collapse" id="navb">
-        <nav>
-            <ul class="nav text-light flex-shrink-1">
-                {% assign pages = site.pages | sort:"menu_priority" %}
-                {% for p in pages %}
-                {% if p.menu_priority %}
-                {% if p.title %}
-                    <li class="nav-item">
-                    <a class="nav-link text-light" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
-                    </li>
-                {% endif %}
-                {% endif %}
-                {% endfor %}
+            <nav>
+                <ul class="nav text-light flex-shrink-1">
+                    {%- assign pages = site.pages | sort:"menu_priority" -%}
+                    {%- for p in pages -%}
+                    {%- if p.menu_priority -%}
+                    {%- if p.title -%}
+                        <li class="nav-item">
+                        <a class="nav-link text-light" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+                        </li>
+                    {%- endif -%}
+                    {%- endif -%}
+                    {%- endfor -%}
+                </ul>
+            </nav>
+
+            <ul class="navbar-nav flex-row ml-md-auto d-md-flex text-light justify-content-end align-items-end">
+                {%- if site.twitter_username != "" -%}
+                <li class="nav-item flex-fill">
+                    <a class="nav-link text-light p-2" href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-2x"></i></a>
+                </li>
+                {%- endif -%}
+                {%- if site.facebook != "" -%}
+                <li class="nav-item flex-fill">
+                    <a class="nav-link text-light p-2" href="{{ site.facebook }}"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </li>
+                {%- endif -%}
+                {%- if site.github_username != "" -%}
+                <li class="nav-item flex-fill">
+                    <a class="nav-link text-light p-2" href="{{ site.github_username | prepend: "https://github.com/" }}" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                {%- endif -%}
+                {%- if site.linkedin != "" -%}
+                <li class="nav-item flex-fill">
+                    <a class="nav-link text-light p-2" href="{{ site.linkedin }}" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                {%- endif -%}
             </ul>
-        </nav>
-
-        <ul class="navbar-nav flex-row ml-md-auto d-md-flex text-light justify-content-end align-items-end">
-            {% if site.twitter_username != "" %}
-            <li class="nav-item flex-fill">
-                <a class="nav-link text-light p-2" href="{{ site.twitter_username | prepend: "https://twitter.com/" }}"><i class="fab fa-twitter fa-2x"></i></a>
-            </li>
-            {% endif %}
-            {% if site.facebook != "" %}
-            <li class="nav-item flex-fill">
-                <a class="nav-link text-light p-2" href="{{ site.facebook }}"><i class="fab fa-facebook-square fa-2x"></i></a>
-            </li>
-            {% endif %}
-            {% if site.github_username != "" %}
-            <li class="nav-item flex-fill">
-                <a class="nav-link text-light p-2" href="{{ site.github_username | prepend: "https://github.com/" }}" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
-            </li>
-            {% endif %}
-            {% if site.linkedin != "" %}
-            <li class="nav-item flex-fill">
-                <a class="nav-link text-light p-2" href="{{ site.linkedin }}" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
-            </li>
-            {% endif %}
-
-        </ul>
-    </div>
-
+        </div>
     </header>

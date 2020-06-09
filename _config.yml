@@ -32,6 +32,7 @@ social:
 
 # Build settings
 markdown: GFM
+highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -47,7 +48,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .gitignore
-  # - node_modules
+  - node_modules
   # - vendor/bundle/
   # - vendor/cache/
   # - vendor/gems/

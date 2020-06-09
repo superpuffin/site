@@ -14,6 +14,6 @@
       }
 }
 
-$primary: #fff; // Background
-$secondary: set-color($primary); // Text
-$hover: set-hover-color($primary);
+$bg-custom: #fff; // Background
+$secondar: set-color($bg-custom); // Text
+$hover: set-hover-color($bg-custom);

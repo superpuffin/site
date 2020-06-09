@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+<h1 class="mb-4">{{page.title}}</h1>
+
+{%- if page.img_url -%}
+    <div class="mx-auto col-lg-10 post-img">
+    <img src="{{ page.img_url }}" alt="{{ page.img_alt }}">
+    </div>
+{% endif %}
+
+<div class="content pb-5">
+    {{ content }}
+</div>

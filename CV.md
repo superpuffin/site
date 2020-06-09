@@ -16,7 +16,7 @@ menu_priority: 2
 
 ### Personals
 
-<div class="mk-responsive" style="@media (min-width: 992px) {max-width:80%}">
+<div class="cv-responsive" style="@media (min-width: 992px) {max-width:80%}">
 
 |||
 |:----------|----------------------:|
@@ -52,7 +52,7 @@ HTML5, LaTeX
  ## Education
  -----------
 
-<div class="mk-responsive pb-4 mb-4" style="">
+<div class="cv-responsive pb-4 mb-4" style="">
 
 ||||
 |:--------------|:----------------------------------|----------------------:|
@@ -68,7 +68,7 @@ HTML5, LaTeX
 
 ### Part Time
 
-<div class="mk-responsive pb-4" style="">
+<div class="cv-responsive pb-4" style="">
 
 ||||
 |:--------------|:--------------------------------------|----------------------:|
@@ -84,7 +84,7 @@ HTML5, LaTeX
 ## Extracurriculars
 ----------
 
-<div class="mk-responsive pb-4" style="">
+<div class="cv-responsive pb-4" style="">
 
 ||||
 |:--------------|:-----------------------------------|---------------------------:|

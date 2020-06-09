@@ -3,3 +3,9 @@
 .sass-cache
 _site
 Gemfile.lock
+# Sass will compile the css so not necessary to include it in the repo
+**/node_modules/**/*.css
+**/node_modules/**/*.css.map
+# The site still uses CDN js libs so js also not necessary
+**/node_modules/bootstrap/**/*.js
+**/node_modules/bootstrap/**/*.js.map

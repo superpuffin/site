@@ -1,3 +1,7 @@
-.mk-responsive > table {
+.cv-responsive > table {
     width: 100%;
+}
+
+:not(.cv-responsive) > table {
+    @extend .table;
 }

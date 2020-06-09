@@ -85,3 +85,6 @@ header {
 .bg-darker {
     background-color: darken(#343a40, 7)!important;
 }
+
+html {scroll-behavior: smooth;}
+pre {padding: .5rem 1.5rem;}
