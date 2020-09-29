@@ -14,4 +14,4 @@ Since I was a child I have had an interest in computers and programming. So in m
 ## Recent projects
 I've started some web development, for instance building this site. Whilst doing this I've learned a lot. For instance using git and jekyll. Also, I've started using Sass with this project.
 
-[1]: https://osiris.uu.nl/osiris_student_uuprd/SetTaal.do?taal=en&bronUrl=/osiris_student_uuprd/OnderwijsCatalogusToonCursus.do&event=setTaal&requestToken=0355b63cb7a23711c8ed8aab07ca72a2d949fcc1
+[1]: https://cursusplanner.uu.nl/course/BETA-B1PYT/2020/3
