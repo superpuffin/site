@@ -1,0 +1,20 @@
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #f8f9fa;
+        background-color: darken(#343a40, 5);
+    }
+
+    .bg-darker {
+        background-color: lighten(#000, 5)!important;
+    }
+
+    hr {background-color: #f8f9fa;}
+
+    .btn-outline-secondary {
+        color: lighten(#6c757d, 40%);
+        border-color: lighten(#6c757d, 40%);
+    }
+
+    a {color: lighten(#007bff, 20%);}
+}
