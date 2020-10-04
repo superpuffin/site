@@ -9,6 +9,12 @@ menu_priority: 3
     <article class="media">
         {%- if post.img_url -%}
             <img src="{{post.img_url}}" alt="{{post.img_alt}}" class="mr-3 mt-1" style="width:5rem">
+            {%- else -%}
+                <div class="mt-1 mr-3" style="width: 5rem;">
+                    {% comment %} 
+                        Empty div to keep everything aligned
+                    {% endcomment %}
+                </div>
         {%- endif -%}
         <div class="media-body">
             <a href="{{ post.url }}" class="mt-0"><h2 class="h4">{{post.title}}</h2></a>
