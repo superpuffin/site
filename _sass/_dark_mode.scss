@@ -11,7 +11,7 @@
 
     hr {background-color: #f8f9fa;}
 
-    .btn-outline-secondary {
+    .btn-outline-secondary, .btn-outline-dark {
         color: lighten(#6c757d, 40%);
         border-color: lighten(#6c757d, 40%);
     }
@@ -21,4 +21,8 @@
     }
 
     a {color: lighten(#007bff, 20%);}
+}
+
+:not(.cv-responsive) > table {
+    color: #f8f9fa!important;
 }
