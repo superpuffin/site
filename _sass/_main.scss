@@ -53,6 +53,10 @@ header {
     a:hover, .text-light {
         color: #f8f9fa!important;
     }
+    
+    .active{
+        text-decoration: underline;
+    }
 
     .nav-item:hover {
         text-decoration: underline;

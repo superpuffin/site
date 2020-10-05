@@ -1,7 +1,7 @@
     <header class="navbar navbar-dark navbar-expand-lg bg-darker">
         
         <span class="navbar-brand text-light">
-            <a clas="text-reset text-light" href="/"><h1 class="text-light display-4">{{ site.title }}</h1></a>
+            <a class="text-reset text-light" href="/"><h1 class="text-light display-4">{{ site.title }}</h1></a>
         </span>
 
         <button class="hamburger_menu navbar-toggler" data-target="navb" data-toggle="collapse" aria-label="Toggle Menu">
@@ -18,7 +18,7 @@
                     {%- if p.menu_priority -%}
                     {%- if p.title -%}
                         <li class="nav-item">
-                        <a class="nav-link text-light" {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+                        <a class="nav-link text-light {% if p.url == page.url %}active"{%else %}"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
                         </li>
                     {%- endif -%}
                     {%- endif -%}
