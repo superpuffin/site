@@ -49,6 +49,13 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - node_modules
+  - gulpfile.js
+  - package.json
+  - yarn.lock
+  - _src
+  - webpack.config.js
+  - README.md
+  - LICENSE.txt
   # - vendor/bundle/
   # - vendor/cache/
   # - vendor/gems/

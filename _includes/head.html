@@ -12,46 +12,44 @@
         content=" default-src 'none'; img-src 'self' data:; 
         script-src 'self' 'sha256-Q9y+S4/cWlWnvBi0DuQ6hwI1BJPnODiAChaChrmcDDs=' 
         'sha256-3ZAe+H5cc35N8APie5N7+NMb0Fn81wSmCVaabdfI2tY='
-        https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js 
-        https://code.jquery.com/jquery-3.5.1.slim.min.js https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js; 
         style-src 'self' 'unsafe-inline'; block-all-mixed-content">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
        
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "/assets/css/code.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="{{ "/assets/css/dark_code.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "/dist/css/code.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="{{ "/dist/css/dark_code.css" | prepend: site.baseurl }}">
     <!-- Font Awesome -->
-    <script defer src="{{ "/assets/fontawesome/js/brands.min.js" | prepend: site.baseurl }}"></script>
-    <script defer src="{{ "/assets/fontawesome/js/fontawesome.min.js" | prepend: site.baseurl }}"></script>
-    <script defer src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+    <!-- <script defer src="{{ "/dist/fontawesome/js/brands.min.js" | prepend: site.baseurl }}"></script>
+    <script defer src="{{ "/dist/fontawesome/js/fontawesome.min.js" | prepend: site.baseurl }}"></script> -->
+    <script defer src="{{ "/dist/js/bundle.js" | prepend: site.baseurl }}"></script>
     <!-- Theme color -->
     <meta name="theme-color" content="#24282c" />
    
     <!-- Favicons -->
         <!-- generics -->
-        <link rel="icon" href="{{ "/assets/ico/favicon-32.png" | prepend: site.baseurl }}" sizes="32x32">
-        <link rel="icon" href="{{ "/assets/ico/favicon-96.png" | prepend: site.baseurl }}" sizes="96x96">
-        <link rel="icon" href="{{ "/assets/ico/favicon-128.png" | prepend: site.baseurl }}" sizes="128x128">
-        <link rel="icon" href="{{ "/assets/ico/favicon-192.png" | prepend: site.baseurl }}" sizes="192x192">
-        <link rel="icon" href="{{ "/assets/ico/favicon-512.png" | prepend: site.baseurl }}" sizes="512x512">
+        <link rel="icon" href="{{ "/dist/ico/favicon-32.png" | prepend: site.baseurl }}" sizes="32x32">
+        <link rel="icon" href="{{ "/dist/ico/favicon-96.png" | prepend: site.baseurl }}" sizes="96x96">
+        <link rel="icon" href="{{ "/dist/ico/favicon-128.png" | prepend: site.baseurl }}" sizes="128x128">
+        <link rel="icon" href="{{ "/dist/ico/favicon-192.png" | prepend: site.baseurl }}" sizes="192x192">
+        <link rel="icon" href="{{ "/dist/ico/favicon-512.png" | prepend: site.baseurl }}" sizes="512x512">
 
         <!-- Android -->
-        <link rel="shortcut icon" sizes="196x196" href="{{ "/assets/ico/favicon-196.png" | prepend: site.baseurl }}">
+        <link rel="shortcut icon" sizes="196x196" href="{{ "/dist/ico/favicon-196.png" | prepend: site.baseurl }}">
 
         <!-- iOS -->
-        <link rel="apple-touch-icon" href="{{ "/assets/ico/favicon-120.png" | prepend: site.baseurl }}" sizes="120x120">
-        <link rel="apple-touch-icon" href="{{ "/assets/ico/favicon-152.png" | prepend: site.baseurl }}" sizes="152x152">
-        <link rel="apple-touch-icon" href="{{ "/assets/ico/favicon-180.png" | prepend: site.baseurl }}" sizes="180x180">
+        <link rel="apple-touch-icon" href="{{ "/dist/ico/favicon-120.png" | prepend: site.baseurl }}" sizes="120x120">
+        <link rel="apple-touch-icon" href="{{ "/dist/ico/favicon-152.png" | prepend: site.baseurl }}" sizes="152x152">
+        <link rel="apple-touch-icon" href="{{ "/dist/ico/favicon-180.png" | prepend: site.baseurl }}" sizes="180x180">
 
         <!-- Windows 8 IE 10-->
         <meta name="msapplication-TileColor" content="#24282c">
-        <meta name="msapplication-TileImage" content="{{ "/assets/ico/favicon-144.png" | prepend: site.baseurl }}">
+        <meta name="msapplication-TileImage" content="{{ "/dist/ico/favicon-144.png" | prepend: site.baseurl }}">
 
         <!-- Windows 8.1 + IE11 and above -->
-        <meta name="msapplication-config" content="{{ "/assets/ico/browserconfig.xml" | prepend: site.baseurl }}" />
+        <meta name="msapplication-config" content="{{ "/dist/ico/browserconfig.xml" | prepend: site.baseurl }}" />
     </head>
     
     

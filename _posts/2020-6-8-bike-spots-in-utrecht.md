@@ -5,7 +5,7 @@ category: "Data science"
 tags:
   - R
   - ggplot2
-img_url: /assets/img/posts/2020-6-8/BicyclePlot.png
+img_url: /dist/img/posts/2020-6-8/BicyclePlot.png
 img_alt: Plot of the bike stall availability data
 ---
 
