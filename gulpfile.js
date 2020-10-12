@@ -53,7 +53,7 @@ gulp.task('sass', () => {
   });
 
   gulp.task('images', () => {
-    return gulp.src('_src/img/**/*.+(png|jpg|jpeg|gif|svg)')
+    return gulp.src('_src/img/**/*.+(png|jpg|jpeg|gif|svg|webp)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
         interlaced: true
