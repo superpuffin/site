@@ -12,7 +12,7 @@ var webpack         = require('webpack');
 const webpackConfig = require('./webpack.config');
 var spawn           = require('cross-spawn');
 var del             = require('del');
-var uncss           = require('uncss').postcssPlugin;
+var purgecss           = require('@fullhuman/postcss-purgecss');
 
 // Utils
 
@@ -137,20 +137,20 @@ gulp.task('watch', gulp.series([
 }])]));
 
 // This task does not work....
-// gulp.task('uncss', gulp.series([
-//   'sass',
-//   'webpack',
-//   'jekyll',
-//   () => {
-//     return gulp.src('./_site/dist/css/**/*.css')
-//     .pipe(sourcemaps.init())
-//     .pipe(postcss([uncss({
-//       html: ['./_site/**/*.html']
-//       })
-//     ]))
-//     .pipe(sourcemaps.write('.'))
-//     .pipe(gulp.dest(path.resolve(__dirname, '/dist/css/')));
-//   }]));
+gulp.task('purgecss', gulp.series([
+  'sass',
+  'webpack',
+  'jekyll',
+  () => {
+    return gulp.src('./_site/dist/css/**/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss([purgecss({
+      content: ['./_site/**/*.html']
+      })
+    ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('/dist/css/'));
+  }]));
 
 // Build site
 
@@ -159,6 +159,7 @@ gulp.task('build', gulp.series([
     'sass',
     'images',
     'webpack',
+    'purgecss',
     // Not including jekyll, as remote will build pages anyway
     (done) => {console.log('Done! You can now commit and push!');done();}
 ]));

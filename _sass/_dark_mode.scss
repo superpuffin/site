@@ -21,8 +21,8 @@
     }
 
     a {color: lighten(#007bff, 20%);}
-}
 
-:not(.cv-responsive) > table {
-    color: #f8f9fa!important;
+    :not(.cv-responsive) > table {
+        color: #f8f9fa!important;
+    }
 }
